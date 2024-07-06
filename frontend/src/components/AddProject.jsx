@@ -42,7 +42,7 @@ const AddProject = () => {
         <div className="absolute inset-0 flex items-center justify-between px-4">
           <div className="flex items-center">
             <img
-              src="/left-arrow.svg"
+              src="/back.svg"
               alt="left-arrow"
               className="mr-2 h-5 w-5"
             />

@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const items = [
-    { src: "/dashboard.svg", alt: "dashboard", link: "/" },
+    { src: "/Dashboard-active.svg", alt: "dashboard", link: "/" },
     {
-      src: "/project-listing.svg",
+      src: "/Project-list-active.svg",
       alt: "project-listing",
       link: "/project-listing",
     },
-    { src: "/add-project.svg", alt: "add-project", link: "/add-project" },
-    { src: "/log-out.svg", alt: "log-out", link: "/login" },
+    { src: "/create-project-active.svg", alt: "add-project", link: "/add-project" },
+    { src: "/Logout.svg", alt: "log-out", link: "/login" },
   ];
 
   return (
