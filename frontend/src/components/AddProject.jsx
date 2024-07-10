@@ -25,6 +25,7 @@ const AddProject = () => {
       const response = await axios.post("http://localhost:3000/api/projects", formData);
       console.log("Project saved:", response.data);
       // Handle success (e.g., show a success message or redirect)
+      alert("success fully saved")
     } catch (error) {
       console.error("Error saving project:", error);
       // Handle error (e.g., show an error message)

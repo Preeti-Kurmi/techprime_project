@@ -5,7 +5,8 @@ import Dashboard from "./components/Dashboard";
 import AddProject from "./components/AddProject";
 import ProjectListing from "./components/ProjectListing";
 import Login from "./components/Login";
-import Signup from "./components/Signup";
+// import Signup from "./components/Signup";
+
 
 const App = () => {
   return (
@@ -16,7 +17,9 @@ const App = () => {
           <Route path="/add-project" element={<AddProject />} />
           <Route path="/project-listing" element={<ProjectListing />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
+          
+          {/* <Route path="/signup" element={<Signup />} /> */}
+        
         </Routes>
       </Layout>
     </BrowserRouter>
@@ -24,3 +27,4 @@ const App = () => {
 };
 
 export default App;
+

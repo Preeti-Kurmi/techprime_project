@@ -145,13 +145,13 @@ const ProjectListing = () => {
                       Start
                     </button>
                     <button
-                      className="bg-gray-500 text-white py-1 px-2 rounded mx-1"
+                      className="bg-blue-500 text-white py-1 px-2 rounded mx-1"
                       onClick={() => handleStatusChange(index, "Close")}
                     >
                       Close
                     </button>
                     <button
-                      className="bg-red-500 text-white py-1 px-2 rounded mx-1"
+                      className="bg-blue-500 text-white py-1 px-2 rounded mx-1"
                       onClick={() => handleStatusChange(index, "Cancel")}
                     >
                       Cancel

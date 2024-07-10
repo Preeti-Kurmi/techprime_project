@@ -17,17 +17,20 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/api/auth/login", {
+      const response = await axios.post("http://localhost:3000/api/login", {
         email,
         password,
       });
       if (response.data.token) {
         // Handle successful login (e.g., store token, redirect)
         localStorage.setItem("token", response.data.token);
+        localStorage.setItem('isAuthenticated',true);
+      
         navigate("/");
       }
     } catch (err) {
-      setError("Login failed. Please check your credentials and try again.");
+     
+      setError(err.response.data.Message);
     }
   };
 
@@ -87,11 +90,7 @@ const Login = () => {
                 Login
               </button>
             </div>
-            <div className="text-center">
-              <Link to="/signup" className="text-blue-500 hover:underline">
-                Signup Here
-              </Link>
-            </div>
+           
           </form>
         </div>
       </div>

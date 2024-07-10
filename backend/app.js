@@ -11,7 +11,7 @@ connectDB();
 app.use(cors());
 app.use(express.json({ extended: false }));
 app.use("/api", projectRouter);
-app.use('/api/auth', authRoutes);
+app.use('/api', authRoutes);
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
